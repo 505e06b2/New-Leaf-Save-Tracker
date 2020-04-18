@@ -1,0 +1,45 @@
+<div class="body-container">
+	<div class="tpc_container ${player1_gender}">
+		<div class="top-border">&nbsp;</div>
+		<div id="tpc_text"></div>
+		<div class="tpc_contents">
+			<div style="flex: 0%">
+				<img class="tpc_pic" src="${player1_tpc_pic}">
+			</div>
+			<div class="tpc_text" style="flex: 100%">
+				<div style="font-size: 25px; font-weight: bold">${player1_name}</div>
+				<hr>
+				<div style="font-size: 20px; padding-bottom: 5px">Playtime ${player1_playtime}</div>
+
+				<div style="font-size: 20px; text-align: right; padding-bottom: 5px">Birthday ${player1_birthday}</div>
+				<div style="font-size: 20px" class="dream_address">
+					<div style="margin-left: 30px">Dream Address</div>
+					<div style="text-align: center">${player1_dream_address}</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-border">Registered ${player1_registration_date}</div>
+	</div>
+
+	<div class="tpc_container town">
+		<div class="top-border">&nbsp;</div>
+		<div class="tpc_contents">
+			<div style="flex: 100%; padding-left: 20px; padding-right: 20px">
+				<div style="font-size: 25px; font-weight: bold; text-align: center; padding-bottom: 5px">${town_name}</div>
+				<div style="font-size: 20px; text-align: center; padding-bottom: 5px">${town_fruit}</div>
+				<div style="font-size: 20px; text-align: center; padding-bottom: 5px">${town_ordinance}</div>
+				<hr>
+				<div style="font-size: 20px">
+					<div style="padding-top: 5px; padding-bottom: 5px; text-align: center">Villagers</div>
+					${villagers_list}
+				</div>
+				<hr>
+				<div style="font-size: 20px">
+					<div style="padding-top: 5px; padding-bottom: 5px; text-align: center">Turnip Prices</div>
+					${turnip_prices_table}
+				</div>
+			</div>
+		</div>
+		<div class="bottom-border">&nbsp;</div>
+	</div>
+</div>

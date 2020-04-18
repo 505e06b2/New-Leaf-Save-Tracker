@@ -1,0 +1,193 @@
+body {
+	background: #111;
+	color: #eee;
+	font-family: sans-serif;
+}
+
+.body-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 25px;
+}
+
+.pre-load {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.tpc_container {
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+	padding: 5px;
+}
+
+.tpc_container .bottom-border {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.tpc_container .top-border {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.tpc_comment {
+	position: absolute;
+	top: -15px;
+	width: 80%;
+	background-color: #fff48b;
+	background-image: linear-gradient(to bottom, white 0%, transparent 60%, transparent 100%);
+	color: #855000;
+	border-radius: 30px;
+	border: 3px solid #f4dd6d;
+	border-left: 6px solid #f4dd6d;
+	border-right: 6px solid #f4dd6d;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.tpc_text {
+	margin: 5px;
+	margin-right: 20px;
+}
+
+.tpc_pic {
+	padding: 10px;
+	margin: 10px;
+	width: 64px;
+	height: 104px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-image: url('./stamp_bg.png');
+}
+
+.tpc_contents {
+	display: flex;
+	flex-direction: row;
+	background-image: radial-gradient(rgba(255,255,255,0.2) 20%, transparent 20%),
+						radial-gradient(rgba(255,255,255,0.2) 20%, transparent 20%);
+
+	background-position: 0 0, 25px 25px;
+	background-size: 50px 50px;
+}
+
+.tpc_contents .column {
+	flex: 50%;
+}
+
+.female .tpc_contents {
+	background-color: #fecbef;
+	color: #940646;
+}
+
+.male .tpc_contents {
+	background-color: #9ae3f4;
+	color: #0b0694;
+}
+
+.town .tpc_contents {
+	background-color: #ccc;
+	color: #555;
+}
+
+
+.female .top-border, .female .bottom-border {
+	background: #ff77bc;
+	color: #66001e;
+}
+
+.male .top-border, .male .bottom-border {
+	background: #37bde3;
+	color: #004280;
+}
+
+.town .top-border, .town .bottom-border {
+	background: #999;
+	color: #000;
+}
+
+.female .tpc_contents .dream_address {
+	background: #fea7da;
+	color: #774f86;
+}
+
+.male .tpc_contents .dream_address {
+	background: #8fdcee;
+	color: #655586;
+}
+
+.bottom-border {
+	border-top: 2px solid rgba(255,255,255, 0.3);
+}
+
+.top-border {
+	border-bottom: 2px solid rgba(255,255,255, 0.3);
+}
+
+.tpc_contents .dream_address {
+	border-radius: 10px;
+	border: 3px solid rgba(255,255,255,0.4);
+	padding: 3px;
+}
+
+.tpc_contents .dream_address div {
+	text-shadow: 1px 1px rgba(255,255,255,0.8);
+}
+
+.villagers {
+	text-align: center;
+}
+
+.villagers > div:nth-child(odd) {
+	background: rgba(0,0,0,0.1);
+}
+
+.turnip_prices {
+	padding-bottom: 5px;
+}
+
+.turnip_prices div {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.turnip_prices div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.turnip_prices div div:first-child {
+	flex: 50%;
+}
+
+.turnip_prices > div > div:not(:first-child) {
+	flex: 25%;
+}
+
+.turnip_prices > div:not(:first-child) > div:not(:first-child) {
+	justify-content: flex-end;
+}
+
+.turnip_prices > div:nth-child(even) {
+	background: rgba(0,0,0,0.1);
+}
+
+.turnip_prices .highest {
+	padding-left: 3px;
+	padding-right: 3px;
+	background: #333;
+	color: #eee;
+}
